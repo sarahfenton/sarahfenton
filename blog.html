@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% include header.html %}
+
+<section class="grid">
+    <h1 class="col-12">Recent posts</h1>
+
+    {% for post in site.posts %}
+    <div class="post-preview col-4">
+        <h3> {{post.title}} </h3>
+        <p> {{post.description}} </p>
+        <p> {{post.date | date_to_string }} </p>
+        <p>
+    </div>
+    {% endfor %}
+
+</section>
+
+<section class="grid">
+    <h1 class="col-12">Recent Travel Posts</h1>
+
+    {% for post in site.categories.travel %}
+    <div class="post-preview col-4">
+        <h3> {{post.title}} </h3>
+        <p> {{post.description}} </p>
+        <p> {{post.date | date_to_string }} </p>
+        <p>
+    </div>
+    {% endfor %}
+
+</section>

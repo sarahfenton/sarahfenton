@@ -6,29 +6,39 @@
 }
 
 /* ------ HEADER ------*/
-header {
+.index-header {
   background-image: url(../img/coden.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding-bottom: 50vh;
 }
+
 .header-nav a {
   text-decoration: none;
   text-align: center;
   color: white;
   padding: 2%;
+}
 
-}
-.header-nav {
-  
-}
 h1 {
-  font-size: 100px;
   text-align: center;
+  margin: 0;
+}
+.index-header h1 {
+  font-size: 100px;
+}
+.page-header h1 {
+  font-size: 20px;
+  text-align: left;
 }
 header nav a:hover {
   color: rgb(109, 165, 255);
+}
+.page-header nav a {
+  text-align: right;
+  text-decoration: none;
+  color: inherit;
 }
 /* ----- SECTION ONE - HIGHLIGHTS ------ */
 .highlight {

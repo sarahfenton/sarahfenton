@@ -2,39 +2,26 @@
 layout: default
 ---
 
-{{content}}
-<body>
-    <header>
-        <h1 class="col-6-middle-center-middle main-text-colour">adventure with sez</h1>
-        <nav class="header-nav col-12-centre-middle grid main-bg-colour">
-          <a class="col-4" href="#">pictures</a>
-          <a class="col-4" href="#">blog</a>
-          <a class="col-4" href="#">videos</a>
-        </nav>
-    </header>
-    <section class="highlight grid main-bg-colour">
+{% include header.html %}
 
-        <article class="ha1 col-4_sm-12 grid">
-          <div class="highlight-image-one col-12-middle-center">
-              <h2 class="main-bg-colour white-font">travel</h2>
-          </div>
-        </article>
+<section class="highlight grid main-bg-colour">
 
-        <article class="ha2 col-4_sm-12 grid">
-          <div class="highlight-image-two col-12-middle">
-              <h2 class="main-bg-colour white-font">lifestyle</h2>
-          </div>
-        </article>
+    <article class="ha1 col-4_sm-12 grid">
+      <div class="highlight-image-one col-12-middle-center">
+          <h2 class="main-bg-colour white-font">travel</h2>
+      </div>
+    </article>
 
-        <article class="ha3 col-4_sm-12 grid">
-          <div class="highlight-image-three col-12-center">
-              <h2 class="main-bg-colour white-font">learning</h2>
-          </div>
-        </article>
+    <article class="ha2 col-4_sm-12 grid">
+      <div class="highlight-image-two col-12-middle">
+          <h2 class="main-bg-colour white-font">lifestyle</h2>
+      </div>
+    </article>
 
-    </section>
+    <article class="ha3 col-4_sm-12 grid">
+      <div class="highlight-image-three col-12-center">
+          <h2 class="main-bg-colour white-font">learning</h2>
+      </div>
+    </article>
 
-    <!-- JAVASCRIPT --->
-    <script src="assets/js/vendor/jquery.3.3.1.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+</section>

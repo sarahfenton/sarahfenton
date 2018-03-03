@@ -9,34 +9,43 @@
     <!-- CSS -->
     <link href="assets/css/vendor/normalize.8.0.0.min.css" rel="stylesheet" />
     <link href="assets/css/vendor/gridlex.2.6.1.min.css" rel="stylesheet" />
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
+  <body>
 
-  {{content}}
+    {{ content }}
 
-  <footer class="grid main-bg-colour white-font">
-    <section class="col-8_sm-12 grid">
-        <div class="col-6_sm-6 profile-pic"></div>
-        <div class="col-6_sm-6 basic-about">
-            <h3>About Me</h3>
-            <p>I am so fantastic but you can read more about this <a href="#">here!</a></p>
-        </div>
-    </section>
-    <section class="col-4_sm-12 grid">
-        <div>join my mailing list</div>
+    <footer class="grid main-bg-colour white-font">
 
-        <div class="col-4">
-            <input type="email" name="your-email" placeholder="EMAIL" required="">
-        </div>
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-        <div class="col-12_sm-12 grid">
-            <a href="https://www.instagram.com/sarahfenton_/" class="col-4 instagram-footer-link"></a>
-            <a href="https://www.youtube.com/channel/UCGRq8Bj__TrjCGwqINvCJvg?view_as=subscriber" class="col-4 youtube-footer-link"></a>
-            <a href="https://soundcloud.com/sarah-fenton-1" class="col-4 soundcloud-footer-link"></a>
-        </div>
-    </section>
-  </footer>
+      <section class="col-8_sm-12 grid">
+          <div class="col-6_sm-6 profile-pic"></div>
+          <div class="col-6_sm-6 basic-about">
+              <h3>About Me</h3>
+              <p>I am so fantastic but you can read more about this <a href="#">here!</a></p>
+          </div>
+      </section>
+
+      <section class="col-4_sm-12 grid">
+          <div class="col-12">join my mailing list</div>
+
+          <div class="col-4">
+              <input type="email" name="your-email" placeholder="EMAIL" required="">
+          </div>
+          <div>
+              <input type="submit" value="Submit">
+          </div>
+          <div class="col-12_sm-12 grid">
+              <a href="https://www.instagram.com/sarahfenton_/" class="col-4 instagram-footer-link"></a>
+              <a href="https://www.youtube.com/channel/UCGRq8Bj__TrjCGwqINvCJvg?view_as=subscriber" class="col-4 youtube-footer-link"></a>
+              <a href="https://soundcloud.com/sarah-fenton-1" class="col-4 soundcloud-footer-link"></a>
+          </div>
+      </section>
+
+    </footer>
+
+    <!-- JAVASCRIPT --->
+    <script src="assets/js/vendor/jquery.3.3.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

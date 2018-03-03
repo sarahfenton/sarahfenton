@@ -1,0 +1,18 @@
+{% if page.url == "/" %}
+  <header class="index-header">
+    <h1 class="col-6-middle-center-middle main-text-colour">adventures with sez</h1>
+    <nav class="header-nav col-12-centre-middle grid main-bg-colour">
+      <a class="col-4" href="about.html">about</a>
+      <a class="col-4" href="#">blogs</a>
+      <a class="col-4" href="#">contact</a>
+    </nav>
+  </header>
+{% else if %}
+  <header class="page-header grid main-bg-colour white-font">
+    <h1 class="col-6">logo</h1>
+    <nav class="col-6-middle grid">
+      <a class="col-4" href="#">about</a>
+      <a class="col-4" href="#">blogs</a>
+      <a class="col-4" href="#">contact</a>
+  </header>
+{% endif %}
