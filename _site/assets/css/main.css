@@ -1,24 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   text-transform: uppercase;
 }
 
 /* ------ HEADER ------*/
 .index-header {
-  background-image: url(../img/coden.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-bottom: 50vh;
+  padding-right: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-nav a {
   text-decoration: none;
   text-align: center;
-  color: white;
-  padding: 2%;
+  background-color: white;
+  padding: 4%;
 }
 
 h1 {
@@ -28,82 +32,268 @@ h1 {
 .index-header h1 {
   font-size: 100px;
 }
+.page-header {
+  text-align: center;
+  border-bottom: 1px solid white;
+  width: 100%;
+  z-index: 2;
+}
 .page-header h1 {
-  font-size: 20px;
-  text-align: left;
+  font-size: 4rem;
+  text-align: center;
+  text-decoration: none;
 }
 header nav a:hover {
-  color: rgb(109, 165, 255);
+  color: white;
+}
+.header-nav a:hover {
+  background-color: #c5c6c9;
 }
 .page-header nav a {
-  text-align: right;
+  text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: rgba(247,217,245,43);
 }
+.page-header-nav a:hover {
+  color: white;
+}
+
+.page-header-nav {
+  text-align: left;
+}
+.page-header-links {
+  padding: 0;
+}
+
+/* ------- HEADER DROP-DOWN NAV --------- */
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    color: #c5c6c9;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  display:block;
+  text-align:left;
+  color: #c5c6c9;
+}
+
+.dropdown-nav {
+  position:relative;
+  text-align: center;
+  color: #c5c6c9;
+  background-color: white;
+  padding: 4%;
+}
+.dropdown-nav a {
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  padding: 4%;
+}
+.dropdown-nav:hover {
+  background-color: #c5c6c9;
+}
+li{list-style:none}
+
 /* ----- SECTION ONE - HIGHLIGHTS ------ */
+.highlight-image {
+  height: 30vw;
+  width: 30vw;
+}
+.highlight-article {
+  border: 20px solid white;
+}
 .highlight {
   background-size: cover;
   background-position: center;
-  padding: 10vh;
+  padding-top: 4rem;
+}
+.highlight a {
+  text-decoration: none;
 }
 .highlight-image-one {
-  background-image: url(../img/thelawn.jpg);
+  background-image: url(../img/pizza.jpg);
   background-size: cover;
-  padding-bottom: 100%;
 }
 .highlight-image-two {
-  background-image: url(../img/cabina.jpg);
+  background-image: url(../img/cardrivein.jpg);
   background-size: cover;
-  padding-bottom: 100%;
 }
 .highlight-image-three {
-  background-image: url(../img/formal.jpg);
+  background-image: url(../img/summer.jpg);
   background-size: cover;
-  padding-bottom: 100%;
 }
-.ha1, .ha2, .ha3 {
-  border: 1px solid lightgrey;
-  padding: 100vh;
+.highlight-image-four {
+  background-image: url(../img/new-zealand.png);
+  background-size: cover;
 }
-.highlight article:hover {
-  color: rgb(109, 165, 255);
+.highlight-image-five {
+  background-image: url(../img/nusa-penida.jpg);
+  background-size: cover;
+}
+.highlight-image-six {
+  background-image: url(../img/coden.jpg);
+  background-size: cover;
+}
+.highlight-header {
+  border: 2px solid white;
+  z-index: 3;
 }
 .highlight h2 {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 40vh;
+  margin-top: 45%;
+}
+.highlight-image-one:hover {
+  background-color: ...;
+  } .highlight-image-two:hover,.highlight-image-three:hover,.highlight-image-four:hover,.highlight-image-five:hover,.highlight-image-six:hover {
+
+}
+.read-more {
+  padding-bottom: 4rem;
+  text-align: right;
+  text-decoration: none;
+}
+/* -------- SECTION WITH ABOUT ME --------- */
+.about-intro-bg {
+  padding: 15vh 0;
+}
+.about-intro {
+  padding: 3rem;
+}
+.about-intro-img {
+  background-image: url(../img/rice.jpg);
+  min-height: 30vw;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  right: -100px;
+}
+.about-intro-p {
+  padding-top: 15rem;
+  padding-left: 10rem;
+}
+.about-intro h3 {
+  font-size: 3rem;
+}
+/* ------ ABOUT ME PAGE ------ */
+.about-page {
+  padding-top: 5rem;
+}
+.about-header-title {
+  font-size: 6rem;
+  margin-top: 3rem;
+}
+.about-page-pic1 {
+  background-image: url(../img/thelawn.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 13rem;
+}
+.about-text1 {
+  padding-top: 10rem;
+  font-size: 2rem;
+}
+.about-text2 {
+  padding-top: 30rem;
+  font-size: 2rem;
+}
+.about-page-pic2 {
+  background-image: url(../img/school.jpg);
+  padding-bottom: 20%;
+  background-position: center;
+  background-size: cover;
 }
 
+/* ------- INTRO VID -------- */
+iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+/* ------- INSTAGRAM BANNER ------- */
+.insta-banner {
+  padding-bottom: 4rem;
+}
+
+/* ------ PAGE WITH RECENT BLOG POSTS ------- */
+.blog-header {
+  font-size: 4rem;
+  text-align: left;
+  margin-top: 16vh;
+}
+.post-preview-images {
+  height: 25vw;
+  background-size: cover;
+  background-position: center;
+}
+.recent-travel-posts {
+  font-size: 4rem;
+  text-align: left;
+}
+
+/* ------- SCROLL UP --------- */
+#scroll-up {
+  position: fixed;
+  right: 10px;
+  bottom: -55px;
+  transition: all .5s ease;
+}
+
+#scroll-up p {
+  font-size: 1rem;
+  text-align: center;
+  transition: all .5s ease;
+}
+
+#scroll-up:hover {
+  bottom: 0px;
+}
+
+#scroll-up:hover p {
+  color: transparent;
+  transform: translateY(10px);
+}
+
+#scroll-up:hover a {
+  background-color: rgb(247,217,245);
+}
+
+#scroll-up a {
+  display: inline-block;
+  color: white;
+  background-color: rgb(247,217,245);
+  padding: 1rem;
+}
+/* ------- EMAIL SUBSCRIBE --------- */
+.email-section {
+  padding: 15% 0%;
+  border: 10rem solid white;
+}
+.jmml, .email {
+  padding-bottom: 0;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.submit-button  {
+  font-size: 2rem;
+}
 /* ------ FOOTER ----- */
-footer {
 
-}
 footer .profile-pic {
   background-image: url(../img/new-zealand.png);
   background-size: cover;
   background-position: center;
-  padding: 20%;
+  border: 3rem solid white;
+  height: 20rem;
+  width: 20rem;
 }
 footer h3 {
   font-size: 20px;
-}
-.instagram-footer-link {
-  background-image: url(../img/insta-icon.png);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 5%
-}
-.youtube-footer-link {
-  background-image: url(../img/youtube-icon.png);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 5%
-}
-.soundcloud-footer-link {
-  background-image: url(../img/soundcloud-icon.png);
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 5%
+  padding-top: 3rem;
 }
 footer p {
   text-transform: none;
@@ -118,13 +308,34 @@ footer p a {
 .no-padding {
   padding: 0;
 }
-
 .main-bg-colour {
   background-color: rgba(247,217,245,43);
+}
+.grey-bg {
+  background-color: #c5c6c9;
+}
+.grey-text {
+  color: #c5c6c9;
+}
+.main-bg-colour-pale {
+  background-color: rgb(249, 239, 248);
 }
 .main-text-colour {
   color: rgba(247,217,245,43);
 }
 .white-font {
   color: white;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
 }

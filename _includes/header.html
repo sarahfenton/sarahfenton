@@ -1,18 +1,64 @@
 {% if page.url == "/" %}
+
   <header class="index-header">
-    <h1 class="col-6-middle-center-middle main-text-colour">adventures with sez</h1>
-    <nav class="header-nav col-12-centre-middle grid main-bg-colour">
-      <a class="col-4" href="about.html">about</a>
-      <a class="col-4" href="#">blogs</a>
-      <a class="col-4" href="#">contact</a>
+    <div class="">
+
+    <h1 class="col-6-middle-center-middle white-font">adventure with sez</h1>
+    <nav class="header-nav col-12-centre-middle grid">
+      <div class="col-1"></div>
+
+      <a class="col-3 grey-text" href="about.html">about</a>
+
+      <div class="col-0.5"></div>
+
+      <a class="col-3 grey-text" href="blog.html">blogs</a>
+
+      <div class="col-0.5"></div>
+
+      <div class="col-3 dropdown-nav grey-text">
+        <a class="dropdown-nav" href="#">connect</a>
+           <div class="dropdown-content">
+            <ul>
+              <li>
+                <a href="contact.html">contact me</a>
+              </li>
+              <li>
+                <a href="work.html">work with me</a>
+              </li>
+            <ul>
+          </div>
+      </div>
+
+      <div class="col-1"></div>
     </nav>
+
+  </div>
   </header>
+
 {% else if %}
-  <header class="page-header grid main-bg-colour white-font">
-    <h1 class="col-6">logo</h1>
-    <nav class="col-6-middle grid">
-      <a class="col-4" href="#">about</a>
-      <a class="col-4" href="#">blogs</a>
-      <a class="col-4" href="#">contact</a>
+
+  <header class="page-header grey-bg white-font grid-noGutter fixed">
+
+    <section class="col-12 grid">
+
+        <nav class="col-5_sm-12-middle-center grid page-header-nav main-text-colour">
+          <a class="col-4" href="about.html">about</a>
+          <a class="col-4" href="blog.html">blogs</a>
+          <a class="col-4" href="#">contact</a>
+        </nav>
+
+        <a href="index.html" class="col-2_sm-12-middle-center link">
+            <h1 class="header-logo">logo</h1>
+        </a>
+
+        <nav class="col-5_sm-12-middle-center grid page-header-links">
+          <a href="https://www.instagram.com/adventurewithsez/" class="col-4-middle"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UCGRq8Bj__TrjCGwqINvCJvg?view_as=subscriber" class="col-4-center"><i class="fab fa-youtube"></i></a>
+          <a href="https://soundcloud.com/sarah-fenton-1" class="col-4"><i class="fab fa-soundcloud"></i></a>
+        </nav>
+
+  </section>
+
   </header>
+
 {% endif %}

@@ -1,30 +1,34 @@
 ---
 layout: default
+title: Sez's Blog Posts
 ---
 {% include header.html %}
 
 <section class="grid">
-    <h1 class="col-12">Recent posts</h1>
+    <h1 class="blog-header main-text-colour col-12">Recent posts</h1>
+    <p class="col-12 main-text-colour">this is where my recent posts will go</p>
 
     {% for post in site.posts %}
     <div class="post-preview col-4">
+        <div style="background-image: url('{{post.featured-image}}')" class="post-preview-images"></div>
+        <p> {{post.date | date_to_string }} </p>
         <h3> {{post.title}} </h3>
         <p> {{post.description}} </p>
-        <p> {{post.date | date_to_string }} </p>
-        <p>
     </div>
     {% endfor %}
 
 </section>
 
 <section class="grid">
-    <h1 class="col-12">Recent Travel Posts</h1>
+    <h1 class="recent-travel-posts main-text-colour col-12">Recent Travel Posts</h1>
+    <p class="main-text-colour col-12">this is where my recent travel posts will go</p>
 
     {% for post in site.categories.travel %}
     <div class="post-preview col-4">
+        <div style="background-image: url('{{post.featured-image}}')" class="post-preview-images"></div>
+        <p> {{post.date | date_to_string }} </p>
         <h3> {{post.title}} </h3>
         <p> {{post.description}} </p>
-        <p> {{post.date | date_to_string }} </p>
         <p>
     </div>
     {% endfor %}
